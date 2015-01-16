@@ -2,6 +2,7 @@ import java.io.File;
 import java.util.Arrays;
 
 import edu.princeton.cs.introcs.In;
+import edu.princeton.cs.introcs.StdDraw;
 import edu.princeton.cs.introcs.StdIn;
 import edu.princeton.cs.introcs.StdOut;
 
@@ -109,14 +110,14 @@ public class BinarySearch
     public static void main(String[] args)
     {
 
-//         // read the integers from a file
-//         In in = new In(args[0]);
-//         StdOut.println(args[0]);
-//         int[] whitelist = in.readAllInts();
-//        
-//         // sort the array
-//         Arrays.sort(whitelist);
-//
+         // read the integers from a file
+         In in = new In(args[0]);
+         StdOut.println(args[0]);
+         int[] whitelist = in.readAllInts();
+        
+         // sort the array
+         Arrays.sort(whitelist);
+
 //         //read integer key from standard input; print if not in whitelist
 //         while (!StdIn.isEmpty())
 //         {
@@ -125,15 +126,13 @@ public class BinarySearch
 //         StdOut.println(key);
 //         }
          
-//         while (!StdIn.isEmpty())
-//         {
-//         int key = StdIn.readInt();
-//         if (rank(key, whitelist,0,whitelist.length-1) == -1)
-//         StdOut.println(key);
-//         }
+        while (!StdIn.isEmpty())
+        {
+            int key = StdIn.readInt();
+            if (rank(key, whitelist, 0, whitelist.length - 1) == -1)
+                StdOut.println(key);
+        }
          
-         
-   
 
     }
 }
